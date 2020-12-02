@@ -4,12 +4,16 @@
     @Html.ActionLink("Checkout", "Index", "Cart",
     new { returnUrl = Request.Url.PathAndQuery },
     new { @class = "btn btn-default navbar-btn" })
+    <a class="btn btn-default navbar-btn" href="/Account/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
 </div>
 <div class="navbar-right visible-xs">
     <a href=@Url.Action("Index", "Cart", new { returnUrl = Request.Url.PathAndQuery })
        class="btn btn-default navbar-btn">
         <span class="glyphicon glyphicon-shopping-cart"></span>
     </a>
+    
+        <a class="btn btn-default navbar-btn" href="/Account/Login"><span class="glyphicon glyphicon-log-in"></span></a>
+
 </div>
 <div class="navbar-text navbar-right">
     <b class="hidden-xs">Your cart:</b>
